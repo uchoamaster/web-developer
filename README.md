@@ -2,21 +2,21 @@
 curso web developer especializati
 
 	| Javascript Essencial | 
-    | Aula 01 |
-    | Aula 02 |
-    | Aula 03 |
-    | Aula 04 |
-    | Aula 05 |
-    | Aula 06 |
-    | Aula 07 |
-    | Aula 08 |
-    | Aula 09 |
-    | Aula 10 |
-    | Aula 11 |
-    | Aula 12 |
-    | Aula 13 |
-    | Aula 14 |
-    | Aula 15 |
-    | Aula 16 |
-    | Aula 17 |
-    | Aula 18 |
+    | Aula 01 |:white_check_mark:|
+    | Aula 02 |:white_check_mark:|
+    | Aula 03 |:white_check_mark:|
+    | Aula 04 |:white_check_mark:|
+    | Aula 05 |:white_check_mark:|
+    | Aula 06 |:white_check_mark:|
+    | Aula 07 |:white_check_mark:|
+    | Aula 08 |:white_check_mark:|
+    | Aula 09 |:white_check_mark:|
+    | Aula 10 |:white_check_mark:|
+    | Aula 11 |:white_check_mark:|
+    | Aula 12 |:white_check_mark:|
+    | Aula 13 |:white_check_mark:|
+    | Aula 14 |:white_check_mark:|
+    | Aula 15 |:white_check_mark:|
+    | Aula 16 |:white_check_mark:|
+    | Aula 17 |:white_check_mark:|
+    | Aula 18 |:white_check_mark:|
