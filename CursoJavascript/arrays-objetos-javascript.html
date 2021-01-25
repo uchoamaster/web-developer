@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Arrays e Objetos no Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+        <h1>Arrays e Objetos no Javascript</h1>
+        <script>
+        //Arrays e Objetos no Javascript
+        var arrayNomes = ["Carlos Uchoa", "João Marcos", "Andreo Zilli", "Georde"];//[1, true, 12.90, "Carlos Uchoa"];
+        //alert(arrayNomes[2]);
+
+        var objetos = {"nome": "Carlos Uchoa",
+                       "idade": 36, 
+                       "cargo": {
+                           "op1": "Fundador EspecializaTI",
+                           "op2": "CEO EspecializaTI",
+                           "op3": {
+                               "teste": 123
+                           }
+                       }
+                    };
+
+        alert(objetos.cargo.op3.teste);
+        </script>   
+    </body>
+</html>
