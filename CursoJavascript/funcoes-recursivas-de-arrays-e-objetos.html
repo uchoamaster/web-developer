@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Recursivas de Arrays e Objetos</title>
+</head>
+<body>
+    <script>
+        var retorno = funcaoRetornaArray();
+        //document.write(retorno[6]);
+        //document.write(funcaoRetornaArray());
+        //alert(funcaoRetornaArray());
+
+        var retornoFO = funcaoRetornaObjet();
+        document.write(retornoFO.cursos.curso1);
+
+        function funcaoRetornaArray(){
+            return  [1,2,3,4,5,6,"Carlos"];
+            
+        }
+        function funcaoRetornaObjet(){
+            return  {"nome": "EspecializaTI",
+                     "cursos":{
+                         "curso1": "Curso Web Developer",
+                         "curso2": "Curso HTML5 Samurai",
+                         "curso3": "Curso Laravel 5.1"
+                     },
+                     "status": "ativo"
+                    
+                    };
+            
+        }
+    </script>
+</body>
+</html>
