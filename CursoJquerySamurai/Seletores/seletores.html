@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seletores Básicos - Curso jQuery Samurai Especializati</title>
     <script src="js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
 
-    
-    
+<h1>*, .class, #id, ["element"]:</h1>
+<div>Sou uma div</div>
+<p class="paragrafo">Sou um "p" com classe .paragrafo</p>
+<p id="paragrafo">Sou um "p" com ID #paragrafo</p>
+    <span>Sou um span(1)</span><br>
+    <span>Sou um span(2)</span><br>
+    <span>Sou um span(3)</span><br>
+    <hr>
+    <h1>Multiple Selector</h1>
+    <p class="class1">"P" com .class1</p>
+    <p class="class2">"P" com .class2</p>
+    <p class="class3">"P" com .class3</p>
+    <script>
+        //inicio do jQuery :-)
+        $(function(){
+            //alert("Olá Mundo !!");
+            /* não é muito recomendado utilizar este seletor que pega todo
+            os campos da pagina  " * " por que ele afeta toda a pagina */
+            //jQuery("*").css("color","#999");
+            jQuery(".paragrafo")
+            .css("color", "red")
+            .css("border","4px solid  black")
+            .click(function(){
+                alert("Clicou no elemento que tem a classe . paragrafo");
+            });
+            jQuery("#paragrafo").css({"color": "blue", "border": "2px solid blue"});
+        });
+            jQuery("span").css({"color": "green"});
+
+            jQuery(".class1,.class2,.class3").css({"color": "yellow"});
+
+    </script>
 </body>
 </html>
