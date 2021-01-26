@@ -8,13 +8,21 @@
 <body>
     
     <h1>Curso Jquery Samurai, meu primeiro programa Jquery</h1>
+
+    <h1>Sou um novo H1</h1>
     <script>
         // $(document).ready(function(){
         //     alert("Hello world");
         // });
 //evitando conflitos usando a terminologia Jquery no lugar do simbolo do $
+        // jQuery(function(){
+        //     alert("Hello World");
+        // });
+
         jQuery(function(){
-            alert("Hello World");
+            jQuery("h1").click(function(){
+                alert("Clicou no H1");
+            });
         });
     </script>
 
