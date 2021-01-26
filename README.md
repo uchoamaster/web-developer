@@ -23,6 +23,27 @@
 | Aula 17 |:white_check_mark:| Funções Recursivas em Javascript|
 | Aula 18 |:white_check_mark:| Funções Recursivas de Array e Objetos|
 
+#### Curso JQuery Samurai
+
+| Introdução | :white_check_mark:| |
+|---|---|---|
+| Aula 01 |:white_check_mark:| Apresentação do jQuery|
+| Aula 02 |:white_check_mark:| Instalando o jQuery - Primeiro Programa|
+| Aula 03 |:white_check_mark:| Evitando conflitos com jQuery|
+| Aula 04 |:white_check_mark:| Primeiro evento de test no jQuery ( Click)|
+| Seletores |:white_check_mark:| |
+| Aula 01 |:white_check_mark:| Seletores Básicos|
+| Aula 02 |:white_check_mark:| Seletores de Atributos|
+| Aula 03 |:white_check_mark:| Seletores de Filtros Básicos|
+| Aula 04 |:white_check_mark:| Seletores de Filtros  de Conteúdo|
+| Aula 05 |:white_check_mark:| Seletores de Filtros Filhos|
+| Aula 06 |:white_check_mark:| Seletores de Formulários|
+| Aula 07 |:white_check_mark:| Seletores Hierárquicos|
+| Aula 08 |:white_check_mark:| Seletores de Visibilidade|
+| Eventos |:white_check_mark:| |
+| Aula 04 |:white_check_mark:| Eventos de Teclado|
+| Aula 01 |:white_check_mark:| Eventos Básicos de Carregamento de Página|
+| Aula 02 |:white_check_mark:| Eventos de Browser|
 
 
 
