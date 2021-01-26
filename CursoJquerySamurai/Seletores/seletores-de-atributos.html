@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de atributos</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<h1>[name="value"], [name!="value"]:</h1>
+<div id="teste">Sou uma div com id #teste</div>
+<div id="teste1">Sou uma div com id #teste1</div>
+<div id="teste2">Sou uma div com id #teste2</div>
+<div id="teste3">Sou uma div com id #teste3</div>
+<div id="teste4">Sou uma div com id #teste4</div>
+
+<hr>
+
+<h1>[name^="value"]:</h1>
+<p name="especializacao">"P" com nome=especializacao</p>
+<p name="programacao">"P" com nome=programacao</p>
+<p name="especializati">"P" com nome=especializati</p>
+
+<hr>
+
+<h1>[name$="value"]:</h1>
+<p name="curso-php">"P" com nome=curso-php</p>
+<p name="desenvolvimento">"P" com nome=desenvolvimento</p>
+<p name="php-samurai">"P" com nome=php-samurai</p>
+
+<hr>
+
+<h1>[name~="value"]:</h1>
+<span name="classespan">"SPAN" com o nome=classespan</span>
+<span name="span nome">"SPAN" com o nome=span nome</span>
+<span name="spantexto">"SPAN" com o nome=spantexto</span>
+<span name="teste span">"SPAN" com o nome=teste span</span>
+
+<hr>
+
+<h1>[name|="value"]:</h1>
+<span name="pt">"SPAN" com o nome=pt</span>
+<span name="en">"SPAN" com o nome=en</span>
+<span name="pt-br">"SPAN" com o nome=pt-br</span>
+<span name="us">"SPAN" com o nome=us</span>
+
+
+<hr>
+
+<h1>[name*="value"]:</h1>
+<span name="buscachaveteste">"SPAN" com o nome=buscachaveteste</span>
+<span name="span-qualquer">"SPAN" com o nome=span-qualquer</span>
+<span name="chave">"SPAN" com o nome=chave</span>
+<span name="novoteste">"SPAN" com o nome=novoteste</span>
+
+<hr>
+
+<h1>Has Attribute Selector [name]:</h1>
+<span atributo="buscachaveteste">"SPAN" com o atributo=buscachaveteste</span>
+<span atributo="span-qualquer">"SPAN" com o atributo=span-qualquer</span>
+<span atributo="chave">"SPAN" com o atributo=chave</span>
+<span atributo="novoteste">"SPAN" com o atributo=novoteste</span>
+
+<hr>
+
+<h1>Has Attribute Selector [name]:</h1>
+<span atributo="nome1">"SPAN" com o atributo=nome1</span>
+<span atributo="nome2">"SPAN" com o atributo=nome2</span>
+<span atributo="nome3">"SPAN" com o atributo=nome3</span>
+<span atributo="nome4">"SPAN" com o atributo=nome4</span>
+
+
+    <script>
+        jQuery(function(){
+            jQuery('[id="teste"]').css("color", "red");
+            /*aqui pega todo o id diferente de teste então pega tudo*/
+            //jQuery('[id!="teste"]').css("color", "purple");
+            //pegar todos os nomes que comecem com esp
+            jQuery('[name^="esp"]').css("color", "green");
+            //pegar todos os nomes que terminem com php
+            // jQuery('[name$="php"]').css("color", "blue");
+            // jQuery('[name$="samurai"]').css("color", "purple");
+            //poderia fazer a união das palavras assim: 
+            jQuery('[name$="php"],[name$="samurai"]').css("color","purple");
+            //quero pegar agora todo span com nome span
+            jQuery("[name~='span']").css("color", "red");
+            //quero pegar agora todo span com o nome pt
+            jQuery("[name|='pt']").css("color", "blue");
+            //quero pegar agora todo elemento que contenha a palavra ( ha) no exemplo
+            jQuery("[name*='ha']").css("color", "gray");
+            //todo elemento span que contenha um atributo nome ou um id
+            jQuery("span[atributo]").css("color", "blue");
+
+        });
+    </script>
+</body>
+</html>
