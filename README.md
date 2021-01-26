@@ -44,6 +44,15 @@
 | Aula 04 |:white_check_mark:| Eventos de Teclado|
 | Aula 01 |:white_check_mark:| Eventos Básicos de Carregamento de Página|
 | Aula 02 |:white_check_mark:| Eventos de Browser|
+| Aula 02 |:white_check_mark:| Eventos de Mouse|
+| Aula 02 |:white_check_mark:| Eventos de Formulário|
+| Aula 02 |:white_check_mark:| Eventos de Objetos|
+| Efeitos |:white_check_mark:| |
+| Aula 01 |:white_check_mark:| Efeitos Básicos|
+| Aula 02 |:white_check_mark:| Efeitos de Opacidade|
+| Aula 03 |:white_check_mark:| Efeitos de Slide|
+| Extra |:white_check_mark:| |
+| Aula 01 |:white_check_mark:| Criar um MOdal Utilizando jQuery do Zero|
 
 
 
