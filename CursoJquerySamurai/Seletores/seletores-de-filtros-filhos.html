@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de filtros filhos</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<h1>:first-child, :last-child</h1>
+    <div class="div-com-paragrafos">
+        <p>Sou o Primeiro P</p>
+        <p>Sou o Segundo P</p>
+        <p>Sou o Terceiro P</p>
+        <p>Sou o Quarto P</p>
+        <p>Sou o Quinto e último P</p>
+    </div>
+
+<hr>
+
+<h1>:first-of-type, :last-of-type</h1>
+    <div>
+        <span>Sou o Primeiro SPAN</span>
+        <span>Sou o Segundo SPAN</span>
+        <span>Sou o Terceiro SPAN</span>
+        <span>Sou o Quarto SPAN</span>
+        <span>Sou o Quinto e último SPAN</span>
+    </div>
+<hr>
+
+<h1>:nth-child, :nth-last-child</h1>
+    <div class="div-com-paragrafos2" >
+        <p>Sou o Primeiro P</p>
+        <p>Sou o Segundo P</p>
+        <p>Sou o Terceiro P</p>
+        <p>Sou o Quarto P</p>
+        <p>Sou o Quinto e último P</p>
+    </div>
+<hr>
+
+<h1>:only-child</h1>
+<div>
+    <strong>Opa sou um "strong" filho único</strong>
+</div>
+
+<hr>
+
+<h1>:only-of-type</h1>
+<div>
+    <p>Opa sou um "p" com irmãos diferentes</p>
+    <button>Opa sou um "button" com irmãos diferentes</button>
+    <strong>Opa sou um "strong" com irmãos diferentes</strong>
+</div>
+
+    <script>
+        jQuery(function(){
+            //pegando o primeiro indice 
+            jQuery("div.div-com-paragrafos p:first-child").css("border", "2px solid blue");
+            //pegando o ultimo indice
+            jQuery("div.div-com-paragrafos p:last-child").css("border", "2px solid green");
+            //first-of-type quero pegar  todo span que é filho de alguma coisa
+            jQuery("span:first-of-type").css("color","red");
+            //last-of-type quero pegar  o ultimo span que é filho de alguma coisa
+            jQuery("span:last-of-type").css("color","red");
+            //quero pegar o paragrafo na posiçao 1,2,3 por exemplo
+            jQuery("div.div-com-paragrafos2 p:nth-child(2)").css("border","2px solid red");
+            //quero pegar o penultimo elemento ou ultimo
+            jQuery("div.div-com-paragrafos2 p:nth-last-child(1)").css("border", "2px solid blue");
+            //pego todo elemento sendo unico filho
+            jQuery("div strong:only-child").css("border","2px solid red");
+            //quero pegar todo strong que tenha irmao diferente
+            jQuery("strong:only-of-type").css("border","2px solid purple");
+            //quero pegar todo P que tenha irmao diferente
+            jQuery("p:only-of-type").css("border","2px solid green");
+       });
+
+    </script>
+</body>
+</html>
