@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de filtros básicos</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<h1>:eq, :first. :last</h1>
+<div class="teste" >Sou a primeira div</div>
+<div class="teste" >Sou a segunda div</div>
+<div class="teste" >Sou a terceira div</div>
+
+
+<hr>
+
+<h1>:gt, :lt</h1>
+<span>Sou o primeiro span</span><br>
+<span>Sou o segundo span</span><br>
+<span>Sou o terceiro span</span><br>
+<span>Sou o quarto span</span><br>
+<span>Sou o quinto span</span><br>
+<span>Sou o sexto span</span><br>
+
+<hr>
+
+<h1>:header</h1>
+<div class="headers">
+<h1>Sou título h1</h1>
+<h2>Sou título h2</h2>
+<h3>Sou título h3</h3>
+<h4>Sou título h4</h4>
+<h5>Sou título h5</h5>
+<h6>Sou título h6</h6>
+</div>
+<hr>
+
+<h1>:lang</h1>
+<p lang="pt-br">Linguagem "pt-br"</p>
+<p lang="en">Linguagem "en"</p>
+<p lang="us">Linguagem "us"</p>
+<p lang="pt">Linguagem "pt"</p>
+
+<hr>
+
+<h1>:odd</h1>
+<table border="1">
+<tr>
+    <td>Coluna #0</td>
+</tr>
+<tr>
+    <td>Coluna #1</td>
+</tr>
+<tr>
+    <td>Coluna #2</td>
+</tr>
+<tr>
+    <td>Coluna #3</td>
+</tr>
+
+</table>
+    <script>
+        jQuery(function(){
+            //vai surtir efeito em toda div 2 ou seja pegar a que selecionar atravez desse comando eq  
+            jQuery("div:eq(1)").css("border", "5px solid #444");
+            //agora se eu quiser pegar e trabalhar apenas na primeira div, usa-se o comando first
+            jQuery("div:first").css("border", "5px solid blue").css("color", "blue");
+            //agora quero pegar o ultimo item no caso a ultima div
+            jQuery("div.teste:last").css("border", "5px solid red").css("color", "red");
+            //quero pegar todos os que são maiores que quatro dentro dos seletores de span
+            jQuery("span:gt(3)").css("color", "yellow");
+            //quero pegar agora todos os que são menores que  numero 2
+            jQuery("span:lt(2)").css("color","purple");
+            //para formatar todos os titulos ( dessa forma todos os titulos que contenham na pagina pegarão  essa formatacao)
+            jQuery(":header").css("color", "blue");
+            //posso colocar apenas no título especifico dessa forma:
+            // preciso especificar dentro de uma div com classe
+            jQuery("div.headers :header").css("color", "green");
+            //agora neste exemplo quero pegar todos os atributos que a linguagem ( lang) seja pt e mudando a cor pra azul
+            jQuery("p:lang('pt')").css("color", "blue");
+            //como colocar cor na tabela com a tag odd
+            jQuery("tr:odd").css("background-color", "blue").css("color", "white");
+
+
+        });
+
+    </script>
+</body>
+</html>
