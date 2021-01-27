@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de filtros de conteudos</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<h1>:contains</h1>
+<div class="teste" >Meu nome é Carlos</div>
+<div class="teste" >Sou o fundados do EspecializaTI</div>
+<div class="teste" >My name is Carlos</div>
+
+
+<hr>
+
+<h1>:empty</h1>
+<div class="teste" >Sou uma div com conteúdo</div>
+<div></div>
+<div class="teste" >Também tenho conteúdo</div>
+<div></div>
+<hr>
+
+<h1>:has</h1>
+<div class="teste" ><p>Sou o conteúdo da div</p></div>
+<div ><p> um paragrafo dentro  da div</p></div>
+<div> sou uma div sem paragrafo</div>
+<hr>
+
+
+    <script>
+        jQuery(function(){
+            //pegar qualquer div que tenha o nome no caso Carlos
+            jQuery("div:contains('Carlos')").css("border", "2px solid #ccc");
+            //vou pegar toda div que nao contem conteudo e aplicar css nela e colocando um texto
+            jQuery("div:empty").css("border", "2px solid red").html("Agora não sou uma div vazia");
+            //pegar somente as divs dentro de um paragrafo
+            jQuery("div:has(p)").css("border", "2px solid blue");        });
+
+    </script>
+</body>
+</html>
