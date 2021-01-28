@@ -25,7 +25,10 @@
 	<script>
 		//Inicio do jQuery :-)
 		$(function(){
-			
+			//pegar toda div visivel
+			jQuery("div:visible").css("color", "red");
+			//todo paragrafo do tipo hidden
+			jQuery("p:hidden").show(3000);
 		});
 	</script>
 </body>
