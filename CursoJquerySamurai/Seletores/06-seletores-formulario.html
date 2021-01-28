@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Seletores de Formulário - Curso jQuery Samurai EspecializaTi</title>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<form action="enviar.php" method="post">
+<!-- DADOS PESSOAIS-->
+<fieldset>
+ <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="nome">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="sobrenome">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Sexo:</label>
+   </td>
+   <td align="left">
+    <label>Masculino <input type="radio" name="sexo" value="M"></label>
+    <label>Femenino <input type="radio" name="sexo" value="F"></label>
+   </td>
+  </tr>
+  <td>
+    <label for="nome">Número do Usuário: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="usuario" disabled>
+   </td>
+ </table>
+</fieldset>
+
+<br />
+<!-- ENDEREÇO -->
+<fieldset>
+ <legend>Dados de Endereço</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="rua">
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="estado">Estado:</label>
+   </td>
+   <td align="left">
+    <select name="estado"> 
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+
+<!-- DADOS DE LOGIN -->
+<fieldset>
+ <legend>Dados de login</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="email">E-mail: </label>
+   </td>
+   <td align="left">
+    <input type="email" name="email" id="email" required>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="imagem">Imagem de perfil:</label>
+   </td>
+   <td>
+    <input type="file" name="imagem" >
+
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="login">Login de usuário: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="login">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="pass">Senha: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="pass">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="passconfirm">Confirme a senha: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="passconfirm">
+   </td>
+  </tr>
+  <tr>
+  	<td align="left">
+    <label>Aceito os termos de uso <input type="checkbox" name="checkbox"></label>
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br>
+<div class="preloader" style="display: none">Enviando dados ...</div>
+<br />
+<button>Botão button</button>
+<input type="submit">
+<input type="reset" value="Limpar">
+</form>
+
+
+	<script>
+		//Inicio do jQuery :-)
+		$(function(){
+    //:submit, :button, :reset, :input, :text, :password, :selected, :radio, :checkbox, :enabled, :disabled, :checkbox
+    //   jQuery('[type="submit"]')
+    //   .css("background", "red")
+    //   .css("padding","5px")
+    //   .css("border","2px solid #000")
+    // });
+    //posso simplificar o codigo acima com este aqui :
+    //ele pega todos os tipos de botão que são do tipo submit
+    jQuery(":submit").css({"background":"red", "color": "white", "padding": "5px"});
+    //pegar todos os campos do tipo button basta fazer isso
+    jQuery(":button").css({"background":"purple", "color": "white", "padding": "5px"});
+    //pegar todos os campos do tipo reset para outra cor
+    jQuery(":reset").css({"background":"green", "color": "white", "padding": "5px"});
+
+    //quero pegar todos os campos do tipo input
+    jQuery(":input").css({"color": "#000","border": "1px solid #000", "font-size":"16px","padding":"10px 20px"});
+    
+    //pegar os campos do tipo text fiquem na cor vermelha
+    jQuery(":text").css("color","red");
+
+    //pegra os campos do tipo password peguem outra formatacao
+
+    jQuery(":password").css("color", "blue");
+//nao pegou por nao ter div, vou add uma class do js chamada .wrap que vai add uma div neles
+    //jQuery(":radio").wrap("<div style='border: 2px solid red'></div>");
+    //atacando agora campos disabled
+    jQuery(":disabled").css("background","gray");
+    //atacando campos habilitados com o comando :enabled mudando a cor para vermelho
+    jQuery("input:enabled").css("color","yellow");
+    //atacando todos os campos do tipo :checkbox
+    jQuery(":checkbox").wrap("<div style='border: 2px solid red'></div>");
+      //colocando email no campo email via jquery
+    jQuery("#email").val("carlosjuchoa@hotmail.com");
+
+
+  jQuery("form").submit(function(){
+    jQuery("div.preloader").show();
+    //aqui pode ser adiciona um return false para evitar que o form vá para a outra pagina do form no method
+    //podendo assim , criar um loader ou um outro evento 
+    return false;
+  });
+
+
+  });
+	</script>
+</body>
+</html>

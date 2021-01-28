@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Seletores Hierarquicos - Curso jQuery Samurai EspecializaTi</title>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+	<h1>("parent > child")</h1>
+	<div class="div-div">
+		<p>Sou um p 1 (filho da div que tem a classe .div-div)</p>
+		<p>Sou um p 2 (filho da div que tem a classe .div-div)</p>
+		<p>Sou um p 3 (filho da div que tem a classe .div-div)</p>
+		<span>Sou um span (filho da div que tem a classe .div-div)</span>
+		<strong>Sou um strong (filho da div que tem a classe .div-div)</strong>
+	</div>
+
+	<hr>
+	<h1>("ancestor descendant")</h1>
+	<div class="div2">
+		<p>Sou um p 1 (filho da div que tem a classe .div2)</p>
+		<p>Sou um p 2 (filho da div que tem a classe .div2)</p>
+		<p>Sou um p 3 (filho da div que tem a classe .div2)</p>
+		<span>Sou um span (filho da div que tem a classe .div2)</span>
+		<strong>Sou um strong (filho da div que tem a classe .div2)</strong>
+	</div>
+
+
+	<script>
+		//Inicio do jQuery :-)
+		$(function(){
+			
+		});
+	</script>
+</body>
+</html>
