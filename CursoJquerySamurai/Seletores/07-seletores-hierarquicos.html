@@ -13,6 +13,9 @@
 		<p>Sou um p 1 (filho da div que tem a classe .div-div)</p>
 		<p>Sou um p 2 (filho da div que tem a classe .div-div)</p>
 		<p>Sou um p 3 (filho da div que tem a classe .div-div)</p>
+		<div>
+			<p>Sou um p 4 (div.div-div > div)</p>
+		</div>
 		<span>Sou um span (filho da div que tem a classe .div-div)</span>
 		<strong>Sou um strong (filho da div que tem a classe .div-div)</strong>
 	</div>
@@ -23,6 +26,9 @@
 		<p>Sou um p 1 (filho da div que tem a classe .div2)</p>
 		<p>Sou um p 2 (filho da div que tem a classe .div2)</p>
 		<p>Sou um p 3 (filho da div que tem a classe .div2)</p>
+		<div>
+			<p>Sou um p 4 (div.div-div > div)</p>
+		</div>
 		<span>Sou um span (filho da div que tem a classe .div2)</span>
 		<strong>Sou um strong (filho da div que tem a classe .div2)</strong>
 	</div>
@@ -30,8 +36,11 @@
 
 	<script>
 		//Inicio do jQuery :-)
-		$(function(){
-			
+		jQuery(function(){
+			//quero pegra todo paragrafo que seja filho da div
+			jQuery("div.div-div > p").css("color", "blue");
+			//qual o elemento anterior e qual o parente dele?
+			jQuery("div.div2 p").css("color","red");
 		});
 	</script>
 </body>
