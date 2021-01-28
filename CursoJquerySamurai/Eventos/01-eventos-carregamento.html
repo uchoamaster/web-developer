@@ -17,5 +17,24 @@
 
 	<a href="http://www.freeline.inf.br">Freeline</a>
 
+	<script>
+		//esse modo foi substituido por uma maneira mais simples, vamos ver no exemplo abaixo:
+		// $(document).ready(function(){
+		// 	alert("O Dom da página foi carregado");
+		// });
+			// dessa maneira é a correta hoje em dia:
+		$(function(){
+			//alert("O DOM da página foi carregado!");
+			//quando minha janela, pagina ou documento estiver toda carregada, ai sim quero que exiba o alert
+			// $(window).load(function(){
+				//alert("tudo foi carregado");
+				//so vai aparecer depois de carregar todas  as imagens
+				jQuery("img").load(function(){
+					alert("Todas as imagens foram carregadas!");
+				});
+			});
+
+	</script>
+
 </body>
 </html>
