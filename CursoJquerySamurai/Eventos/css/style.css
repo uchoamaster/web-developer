@@ -1,0 +1,26 @@
+.title{
+    font-size: 20px;
+    color: #FFF;
+    background: #67888C;
+    text-align: center;
+    padding: 20px 0px;
+}
+div{
+    text-align: center;
+    padding: 10px 0px;
+    margin: 5px 0px;
+    color: #FFF;
+    background: #7CAAAF;
+    cursor: pointer;
+}
+div span{
+    padding: 6px;
+    margin: 5px;
+    background: #CCC;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, #737373, #7B7B7B);
+}
+.clicked{
+    background: #76C5CE;
+}
+textarea{max-width: 100%;}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos de Carregamento - Curso jQuery Samurai EspecializaTi</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<h1 class="title">
+		Eventos de Teclado [.keydown(), .keypress(), .keyup()]
+	</h1>
+
+
+	<div>
+		<textarea name="texto" id="texto" cols="50" rows="12">
+			
+			
+		</textarea>
+
+		<div class="total"></div>
+	</div>
+
+
+	<script>
+		$(function(){
+			// jQuery("#texto").keydown(function(){
+			// 	 alert("evento keydown foi disparado");
+			// });
+			// jQuery("#texto").keypress(function(){
+			// 	 alert("evento keypress foi disparado");
+			// });
+
+			// jQuery("#texto").keyup(function(){
+			// 	alert("O evento keyup foi disparado");
+			// });
+			//a seguir consigo calcular a quantidade de espaços 
+				jQuery("#texto").keyup(function(){
+				//alert(jQuery(this).val());
+				var max = 20;
+				//alert(jQuery(this).val().length);
+				var ValorText = jQuery(this).val();
+				var totalCharsDigits = ValorText.length; 
+				jQuery(".total").text(totalCharsDigits);
+				if (totalCharsDigits > max)
+				jQuery(this).val(ValorText.substr(0,max));
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<script>
+		//Inicio do jQuery :-)
+		$(function(){
+			jQuery("img").error(function(){
+				jQuery(this).attr("src", "imgs/especializati.png");
+			});
+
+			$( ".size" ).html( $( window ).width() );
+			$( window ).resize(function() {
+			  $( ".size" ).html( $( window ).width() );
+			});
+
+
+			jQuery(window).scroll(function(){
+				if( jQuery(window).scrollTop() > 150 )
+					jQuery(".voltar-topo").css("display", "block");
+				else
+					jQuery(".voltar-topo").css("display", "none");
+
+			});
+
+			jQuery(".voltar-topo").click(function(){
+				 $("html, body").animate({ scrollTop: 0 }, "slow");
+			});
+		});
+	</script>
