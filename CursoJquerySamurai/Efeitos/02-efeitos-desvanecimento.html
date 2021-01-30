@@ -21,6 +21,24 @@
 			Div que será aplicado os efeitos
 		</div>
 	</div>
+<script>
+	$(function(){
+		jQuery(".show").click(function(){
+			jQuery(".resultado").fadeOut();
+		});
+		jQuery(".hide").click(function(){
+			jQuery(".resultado").fadeIn();
+		});
+		jQuery(".toogle").click(function(){
+			jQuery(".resultado").fadeTo("slow", 0.4);
+		});
+		jQuery(".toogle").dblclick(function(){
+			jQuery(".resultado").fadeTo("slow", 1);
+		});
 
+	});
+
+
+</script>
 </body>
 </html>
