@@ -18,13 +18,24 @@
 		<p>
 			<a href="http://www.especializati.com.br">EspecializaTi</a>
 		</p>
-		<input type="text" name="nome" placeholder="Digite algo">
+		<input type="text" name="nome" id="nome" placeholder="Digite algo">
 	</div>
 
 
 	<script>
 		$(function(){
-			
+			jQuery("a").click(function(){
+				alert("clicou em algum link");
+					//event.preventDefault();
+					
+					return false;
+
+			});
+			jQuery("#nome").keydown(function(event){
+				if (event.which == "13")
+				alert(" tecla enter");
+			});
+
 		});
 	</script>
 </body>
