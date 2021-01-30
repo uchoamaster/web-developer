@@ -31,18 +31,44 @@
 	</div>
 	<div class="mousemove">
 		Moviente o Mouse Aqui (mousemove)
+		<div class="result"></div>
 	</div>
 	<div class="mouseout">
 		Coloque o Mouse Aqui e Retire (mouseout)
 	</div>
 	<div class="toggle">
 		Clique e Clique Novamente (toggle)
+		<p class="toggle">Elemento p com a classe Toggle</p>
 	</div>
 
 
 	<script>
 		$(function(){
-			
+			jQuery("div.click").click(function(){
+				alert("disparado o evento de click");
+			});
+			jQuery("div.mousedown").mousedown(function(){
+				alert("disparado o evento de mousedown");
+			});
+			jQuery("div.mouseup").mouseup(function(){
+				alert("disparado o evento de mouseup");
+			});
+			jQuery("div.dblclick").dblclick(function(){
+				alert("disparado o evento de dblclick");
+			});
+			// jQuery("div.hover").hover(function(){
+			// 	alert("disparado o evento de hover");
+			// });
+			jQuery("div.mousemove").mousemove(function(event){
+				//alert(event.pageX);
+				jQuery("div.result").html("Width => "+event.pageX+"<br>Heigth => "+event.pageY);
+			});
+			// jQuery("div.mouseout").mouseout(function(){
+			// 	alert("disparado o evento de mouseout");
+			// });
+			jQuery("div.toggle").click(function(){
+				jQuery("p.toggle").toggle("show");
+			});
 		});
 	</script>
 </body>
