@@ -3,10 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Modal em jQuery - Curso jQuery Samurai EspecializaTi</title>
-
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
-	
+<div class="content">
+	<a href="#" class="showmodal">Abrir Modal</a>
+</div>
+<div class="modalcontent" style="display: none;">
+	<div class="modal">
+		<img src="imgs/cancel.png" class="closemodal" alt="fechar modal img">
+		<div class="modalheader">
+			<h1 class="titulomodal">Titulo Modal</h1>
+		</div>
+		<div class="modalbody">
+			Olá eu sou o corpo da modal
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		jQuery(".showmodal").click(function(){
+			//alert("vamos abrir a modal");
+			jQuery(".modalcontent").fadeIn("slow");
+			return false
+		});
+		jQuery(".closemodal").click(function(){
+		
+			jQuery(".modalcontent").fadeOut("slow");
+		});
+		
+	});
+</script>
 </body>
 </html>
