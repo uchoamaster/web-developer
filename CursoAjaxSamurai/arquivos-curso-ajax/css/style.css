@@ -1,0 +1,54 @@
+/*helpers*/
+.logo{max-width: 200px; margin: 10px;}
+.btn-add{
+    background: #368E2B;
+    float: left;
+    padding: 5px 40px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.btn-refresh{
+    background: #969821;
+    float: left;
+    padding: 5px 40px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.icon-image{
+    width: 18px;
+}
+.edit{
+    background: #36DC97;
+    float: left;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 2px;
+}
+.delete{
+    background: #DE4D7C;
+    float: left;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+
+
+/*resets*/
+.modal-header-especializati{
+    background: #1C8CCA;
+    color: #FFF;
+}
+.modal-content{border-radius: 0px !important;}
+.modal-header-delete{
+    background: #CA1C3C;
+    color: #FFF;
+}
+.form-control{
+    border-radius: 0px !important;
+    /* height: 40px; */
+    padding: 22px 6px;
+    color: #1C8CCA;
+    font-size: 16px;
+}
+.btn{border-radius: 0px !important;}
