@@ -20,7 +20,7 @@
 				<input type="text" name="nome" placeholder="Informe o texto">
 			</div>
 
-			<select name="estado"> 
+			<select name="estado" id="estado"> 
 				<option value="">Selecione o estado</option>
 				<option value="ac">Acre</option>
 				<option value="al">Alagoas</option> 
@@ -60,7 +60,46 @@
 
 	<script>
 		$(function(){
-			
+		// 	jQuery("form").submit(function(){
+		// 		alert("o form foi submetido");
+
+		// 		return false;
+
+		// 	});
+		// 	jQuery(":text").select(function(){
+		// 		//alert("foi  selecionado o conteúdo!");
+		// 		alert(jQuery(this).val());
+		// });
+		// jQuery(":input").focus(function(){
+		// 	//jQuery(this).css("border", "2px solid red");
+		// });
+
+		/*
+		no caso do focusIn pega toda a div que contenha um :input ( para pegar os inputs mesmo tem que pegar os filhos da div ex: Jquery("div.text > :input"))
+		*/
+		// jQuery("div.texto").focusin(function(){
+		// 	jQuery(this).css("border", "2px solid red");
+		// });
+			// jQuery(":input").blur(function(){
+			// 	var valor = jQuery(this).val();
+			// 	if(valor == "")
+			// 	jQuery(this).css("border", "3px solid red");
+			// 	else
+			// 	jQuery(this).css("border", "3px solid green");
+			// });
+
+				jQuery("div.texto").focusout(function(){
+			jQuery(this).css("border", "2px solid red");
+		});
+		jQuery("#estado").change(function(){
+			// alert(jQuery(this).val());
+			if ( jQuery(this).val() == "")
+			jQuery(this).css("border", "2px solid red");
+			else
+			jQuery(this).css("border", "2px solid green");
+		});
+
+
 		});
 	</script>
 </body>
