@@ -1,0 +1,26 @@
+.title{
+    font-size: 20px;
+    color: #FFF;
+    background: #67888C;
+    text-align: center;
+    padding: 20px 0px;
+}
+div{
+    text-align: center;
+    padding: 10px 0px;
+    margin: 5px 0px;
+}
+div span{
+    padding: 10px 22px;
+    margin: 5px;
+    background: #CCC;
+    border-radius: 4px;
+    color: #FFF;
+}
+div.resultado{
+    max-width: 500px;
+    margin: 18px auto;
+    padding: 18px;
+    background: #375392;
+    color: #FFF;
+}
