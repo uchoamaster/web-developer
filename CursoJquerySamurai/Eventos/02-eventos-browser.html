@@ -15,16 +15,48 @@
 
 	<div class="div-com-scroll" style="height: 1500px">
 		<img src="imgs/especializatii.png" alt="EspecializaTi">
+		<div class="resultado">
+
+		</div>
 	</div>
 
-	<div class="voltar-topo" style="display: block; float: right; position: fixed; bottom: 0px; right: 0px; padding: 14px; margin: 10px; background: #C3C3C3; border-radius: 5px; cursor: pointer;" title="Voltar ao Topo">
+	<div class="voltar-topo" style="display: none; float: right; position: fixed; bottom: 0px; right: 0px; padding: 14px; margin: 10px; background: #C3C3C3; border-radius: 5px; cursor: pointer;" title="Voltar ao Topo">
 		<img src="imgs/home.png" alt="Voltar Topo">
 	</div>
 
 	<script>
 		//Inicio do jQuery :-)
 		$(function(){
+			jQuery("img").error(function(){
+				jQuery(this).attr("src","imgs/LOGO.jpg");
+			});
+
 			
+			
+
+
+			jQuery(window).resize(function(){
+				jQuery("div.resultado").html("Width => "+jQuery(window).width()+" pixels <br> Height => "+jQuery(window).height()+" pixels");
+			});
+
+			var divVoltar = jQuery("div.voltar-topo");
+
+			jQuery(window).scroll(function(){
+				//alert("usou o scrol");
+				//alert(jQuery(window).scrollTop());
+				var topo =   jQuery(window).scrollTop();
+
+				
+				if (topo >= 300)
+				divVoltar.show();
+				else
+				divVoltar.hide();
+			});
+				divVoltar.click(function(){
+					//alert("vou voltar ao topo");
+					jQuery("html, body").animate({scrollTop: "0"},"slow");
+				});
+
 		});
 	</script>
 </body>
